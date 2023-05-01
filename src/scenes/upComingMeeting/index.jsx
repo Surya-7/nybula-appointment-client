@@ -8,7 +8,7 @@ const UpcomingMeeting = () => {
   const token = useSelector((state) => state.token);
   const loggedInUserId = useSelector((state) => state.user._id);
   const getMeetingDetails = async () => {
-    const response = await fetch(`http://localhost:3001/users/${loggedInUserId}/friends`, {
+    const response = await fetch(`https://appointment-app-api.onrender.com/users/${loggedInUserId}/friends`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
