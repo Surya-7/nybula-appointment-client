@@ -7,9 +7,7 @@ When it comes to scheduling meetings tracking their availability is pain. The pu
 
 ## Documentation
 
-The client side of the project is developed using 
-[create-react-app](https://legacy.reactjs.org/docs/getting-started.html)
-
+The client side of the project is developed using [create-react-app](https://legacy.reactjs.org/docs/getting-started.html). React js is chosen because of its code and component reusabiity.
 
 ## Deployment
 
