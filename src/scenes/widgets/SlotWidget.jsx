@@ -4,10 +4,13 @@
   import WidgetWrapper from "components/WidgetWrapper";
   import { useSelector } from "react-redux";
   import { useEffect, useState } from "react";
-  
+    import { useNavigate } from "react-router-dom";
+
   const SlotWidget = ({ userId, picturePath }) => {
         //Create a useState hook 
     const [user, setUser] = useState(null);
+        const navigate = useNavigate();
+
     const [loggedInUser, setLoggedInUser] = useState(null);
     const { palette } = useTheme();
     const loggedInUserId = useSelector((state) => state.user._id);
@@ -76,6 +79,7 @@
         });
         const updatedAvail = await response.json();
         alert("slot booked");
+        navigate(0);
         console.log(updatedAvail);
     }
     return (
