@@ -79,7 +79,7 @@
         });
         const updatedAvail = await response.json();
         alert("slot booked");
-        navigate(0);
+        navigate(`/meetings/${loggedInUserId}`);
         console.log(updatedAvail);
     }
     return (
