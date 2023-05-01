@@ -35,6 +35,10 @@ To start the development server:
 * User authentication.
 * Different themes (light and dark theme)
 * passwords are hashed before stoing in the database. 
+* Meetings can be booked from any of the available slots
+* Total of 7 slots available per day excluding breaks.
+* Meetings can be booked only when both of them are available at that slot.
+
 
 ## Host
 
