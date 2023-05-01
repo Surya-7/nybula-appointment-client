@@ -9,7 +9,7 @@ const BookMeeting = () => {
   const token = useSelector((state) => state.token);
 
   const getUser = async () => {
-    const response = await fetch("http://localhost:3001/users", {
+    const response = await fetch("https://appointment-app-api.onrender.com/users", {
       method: "GET",
       headers: { Authorization: `Bearer ${token}`
     },
