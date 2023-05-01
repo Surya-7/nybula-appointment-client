@@ -20,7 +20,7 @@
       //Fetch the details of the friendId using an API call
   
     const getUser = async () => {
-      const response = await fetch(`http://localhost:3001/users/${userId}`, {
+      const response = await fetch(`https://appointment-app-api.onrender.com/users/${userId}`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -30,7 +30,7 @@
 
     //fetch details of the user id: 
     const getLoggedInUser = async () => {
-        const response = await fetch(`http://localhost:3001/users/${loggedInUserId}`, {
+        const response = await fetch(`https://appointment-app-api.onrender.com/users/${loggedInUserId}`, {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });
@@ -66,7 +66,7 @@
     //finding the availability of the user.
 
     const updateAvailability = async(data) =>{
-        const response = await fetch(`http://localhost:3001/users/${loggedInUserId}/${userId}`, {
+        const response = await fetch(`https://appointment-app-api.onrender.com/users/${loggedInUserId}/${userId}`, {
         method: "PATCH",
         headers: {
             Authorization: `Bearer ${token}`,
